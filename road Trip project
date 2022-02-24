@@ -53,7 +53,7 @@ conv_mil = convert_mil_to_kil(float(conv_kilos))
 
 #Conv_liters = conv_gal_to_liter(float(Conv_gal))
 
-conv_liters = input("please enter the the gallons that your car takes ( will convert to liters) ")
+conv_liters = input("please enter the the gallons that your car takes  ")
 
 conv_gal = conv_liters_to_gal(float(conv_liters))
 
