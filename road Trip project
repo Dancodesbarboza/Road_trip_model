@@ -38,15 +38,7 @@ def conv_kilos_to_miles(conv_mil):
 conv_mil=input("Please enter the miles that you are willing to convert to KM !")
 
 conv_kilos= conv_kilos_to_miles(float(conv_mil))
-'''
-#print(f"{conv_mil} miles is {conv_kilos} in kilometers")
 
-conv_kilos = input(" please enter the kilometers to be converted to miles ")
-
-conv_mil = convert_mil_to_kil(float(conv_kilos))
-
-#print(f"{conv_kilos} kilometers is {conv_mil} in miles")
-'''
 
 # the computer ask the user for information about your road Trip
 #Conv_gal =input("please enter the gallons that your car takes (will convert to Liters)  ")
