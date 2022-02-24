@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Feb 19 21:08:55 2022
+
+@author: Dancodesbarboza
+"""
+
+# convert gallons to liters 
+
+# function that converts gallons to liters
+def conv_gal_to_liter(Conv_liters):
+    Conv_gal = (Conv_liters * 3.78)
+    return Conv_gal
+# function that returns liters to gallons 
+def conv_liters_to_gal(conv_gal):
+    Conv_liters = (conv_gal// 3.6461538)
+    return Conv_liters
+
+
+def convert_mil_to_kil(conv_kilos):
+    conv_mil = (conv_kilos * 1.609344)
+    return conv_mil
+
+
+def conv_kilos_to_miles(conv_mil):
+    conv_kilos = (conv_mil*0.62137119)
+    return conv_kilos
+
+
+
+
+#car_mpg = user_miles // conv_gal 
+
+
+# this is for convert kilos to miles and miles to kilos 
+
+conv_mil=input("Please enter the miles that you are willing to convert to KM !")
+
+conv_kilos= conv_kilos_to_miles(float(conv_mil))
+'''
+#print(f"{conv_mil} miles is {conv_kilos} in kilometers")
+
+conv_kilos = input(" please enter the kilometers to be converted to miles ")
+
+conv_mil = convert_mil_to_kil(float(conv_kilos))
+
+#print(f"{conv_kilos} kilometers is {conv_mil} in miles")
+'''
+
+# the computer ask the user for information about your road Trip
+#Conv_gal =input("please enter the gallons that your car takes (will convert to Liters)  ")
+
+#Conv_liters = conv_gal_to_liter(float(Conv_gal))
+
+conv_liters = input("please enter the the gallons that your car takes ( will convert to liters) ")
+
+conv_gal = conv_liters_to_gal(float(conv_liters))
+
+# the computer will ask for the type of car of thier car and the miles that they are Driving 
+
+user_car = input(" Please enter the brand of your personal car")
+
+user_miles =input(" How many miles are you going to Drive ") # convert to float 
+
+
+# the computer ask the user for thier start and end destinations 
+user_start = input(" Please enter your starting destination ")
+
+user_end = input(" Please enter your ending destination")
+
+# the information on how the program finds out the MPG of the user car
+user_miles_float = float(user_miles)
+conv_gal_float = float(conv_gal)
+car_mpg = (user_miles_float // conv_gal_float)
+
+# convert user_miles to a float and conv_liters to a float as well 
+print()
+print(" The program gives out a estimate of the MPG do not belive it !")
+print()
+print(f"You are going to drive {user_miles} miles  or {conv_kilos} KM  in your {user_car} starting from {user_start} all the way to {user_end} your cars MPG when you arrive will be {car_mpg}  ")
+print()
+print(f" you are going to drive {user_miles} miles or {conv_kilos} KM in your {user_car} starting from {user_end} all the way to {user_start} your cars MPG when you arrive will be {car_mpg}")
+
+
